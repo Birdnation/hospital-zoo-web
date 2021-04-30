@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Login, Home, ErrorUrl } from "./components/ViewImports";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello world!</h1>
-    </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" render={Login} />
+          <Route path="/home" render={Home} />
+          <Route path="/*" render={ErrorUrl} />
+        </Switch>
+      </BrowserRouter>
   );
-}
+};
 
 export default App;

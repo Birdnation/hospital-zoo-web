@@ -1,0 +1,15 @@
+
+
+.containerForm{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+
+}
+
+.containerForm input,.containerForm button {
+    max-width: 250px;
+    margin: 5px;
+}
