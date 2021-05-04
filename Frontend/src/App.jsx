@@ -13,6 +13,7 @@ const App = () => {
           <Route exact path="/" component={Login} />
           <Route path="/home/newanimal" component= {NewAnimal} />
           <Route path="/home/newzoo" component= {NewZoo} />
+          <Route path="/*" component= {ErrorUrl} />
         </Switch>
       </BrowserRouter>
     </GeneralContext>
