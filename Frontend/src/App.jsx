@@ -1,11 +1,23 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Login, Home, ErrorUrl,NewAnimal,NewZoo } from "./Views/IndexImports";
+import GeneralContext from "./context/GeneralContext";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello world!</h1>
-    </div>
+    <GeneralContext>
+      <BrowserRouter>
+        {/* RUTAS */}
+        <Switch>
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={Login} />
+          <Route path="/home/newanimal" component= {NewAnimal} />
+          <Route path="/home/newzoo" component= {NewZoo} />
+          <Route path="/*" component= {ErrorUrl} />
+        </Switch>
+      </BrowserRouter>
+    </GeneralContext>
   );
-}
+};
 
 export default App;
