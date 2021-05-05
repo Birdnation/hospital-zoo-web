@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink as A} from "react-router-dom";
+import { NavLink as A } from "react-router-dom";
 import "../Styles/SideBar.css";
 import elefanteLogo from "../assets/img/HOSPITALZOOICO.PNG";
 import Routes from "../Routes";
@@ -18,7 +18,9 @@ const SideBar = ({ children, history }) => {
       </div>
       <div className={`navigation${toggle ? " active" : ""}`}>
         <div className="head">
-          <img className="logo" src={elefanteLogo} alt="elefante" />
+          <A className="logo" to="/home">
+            <img className="logo" src={elefanteLogo} alt="elefante" />
+          </A>
         </div>
         <ul>
           <li>
