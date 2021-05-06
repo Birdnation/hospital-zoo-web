@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../Styles/Login.css";
 
 const Login = () => {
+  useEffect(() => {
+    document.title("Login")
+  },[])
   return (
     <>
       <div className="containerForm">
