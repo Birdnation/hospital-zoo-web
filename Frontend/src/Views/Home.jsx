@@ -1,10 +1,14 @@
 import { NavLink } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from "react";
 import "../Styles/custom.css";
 import "../Styles/styles.css";
 import Routes from "../Routes";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+  
   return (
     <div className="centro">
       <div className="centro">

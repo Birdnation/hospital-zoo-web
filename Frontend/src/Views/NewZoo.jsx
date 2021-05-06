@@ -1,9 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import SideBar from "../components/SideBar";
 import "../Styles/NewAnimal.css";
 
 const NewZoo = () => {
+  useEffect(() => {
+    document.title = "Nuevo Zoologico";
+  }, []);
+  
   return (
     <SideBar>
       <div className="centro">

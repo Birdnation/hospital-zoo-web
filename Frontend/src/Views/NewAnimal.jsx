@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../Styles/NewAnimal.css";
 import "../Styles/custom.css";
 import "../Styles/styles.css";
@@ -6,6 +6,9 @@ import { NavLink } from "react-router-dom";
 import SideBar from "../components/SideBar";
 
 const NewAnimal = () => {
+  useEffect(() => {
+    document.title = "Registrar Nuevo Animal";
+  }, []);
   return (
     <SideBar>
       <div className="centro">
