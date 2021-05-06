@@ -20,18 +20,15 @@
   overflow: hidden;
 }
 
-.navigation ul li A::before {
+.navigation ul li A:first-child::before
+{
   content: "";
   position: absolute;
   width: 100%;
-  height: 0px;
   background-color: var(--sideText);
   z-index: 20;
   transition: 0.3s;
   transform: translateX(-105%);
-}
-.navigation ul li A:first-child::before
-{
   height: 1px;
 }
 .navigation ul li A:hover::before {
