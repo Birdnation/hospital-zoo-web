@@ -4,7 +4,7 @@ import "../Styles/Login.css";
 
 const Login = () => {
   useEffect(() => {
-    document.title("Login")
+    document.title = "Login";
   },[])
   return (
     <>
