@@ -1,0 +1,52 @@
+#home{
+    height: 100vh;
+    min-height: 480px;
+    max-height: 1080px;
+}
+
+.botón{
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#img-huella{
+    position: absolute;
+    top: 10%;
+    height: 80%;
+    opacity: 0.15;
+    z-index: -1;
+    transform: translateX(5px);
+}
+
+@media screen and (max-height: 480px) {
+    #img-huella{
+        position: absolute;
+        top: calc(480px*0.1);
+        height: calc(480px*0.8);
+        opacity: 0.15;
+        z-index: -1;
+        transform: translateX(5px);
+    }
+}
+
+#img-usuario{
+    transform: scale(2) translateX(0.5px);
+    margin: 15px;
+}
+
+.recuadro{
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 100%;
+}
+
+#datos-usuario{
+    width: 200px;
+    min-height: 100px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.vacío{
+    height: 10px;
+}

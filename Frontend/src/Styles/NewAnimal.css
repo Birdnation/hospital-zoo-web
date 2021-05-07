@@ -1,0 +1,42 @@
+.containerForm{
+    height: auto;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    
+    
+
+}
+
+.containerForm input,.containerForm button {
+    max-width: 250px;
+    margin: 5px;
+    
+}
+
+
+
+.sectionForm {
+    
+    align-items: center;
+}
+
+.descripcion {
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    
+}
+
+.mainForm {
+    border:black 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1,h2 {
+    text-align: center;
+}
+
