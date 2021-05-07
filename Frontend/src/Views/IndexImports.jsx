@@ -1,6 +1,5 @@
 import Login from "./Login";
-import HomeSecretaria from "./HomeSecretaria";
-import HomeAdmin from "./HomeAdmin";
+import Home from "./Home";
 import ErrorUrl from "./ErrorUrl";
 import NewAnimal from "./NewAnimal";
 import NewZoo from "./NewZoo";
@@ -10,8 +9,7 @@ import UpdateUser from "./UpdateUser";
 
 export {
     Login,
-    HomeSecretaria,
-    HomeAdmin,
+    Home,
     ErrorUrl, 
     NewAnimal,
     NewZoo,

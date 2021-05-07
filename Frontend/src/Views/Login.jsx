@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../Styles/Login.css";
+import Routes from "../Routes"
 
 const Login = () => {
   useEffect(() => {
@@ -14,11 +15,8 @@ const Login = () => {
         <input type="text" />
         <h2>CONTRASEÑA</h2>
         <input type="password" />
-        <NavLink to="/home_secretaria">
-          <button>Home secretaria</button>
-        </NavLink>
-        <NavLink to="/home_admin">
-          <button>Home admin</button>
+        <NavLink to={Routes.HOME}>
+          <button>Entrar</button>
         </NavLink>
       </div>
     </>

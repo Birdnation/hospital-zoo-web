@@ -1,18 +1,17 @@
 import { NavLink } from "react-router-dom";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect} from "react";
 import "../Styles/custom.css";
 import "../Styles/styles.css";
 import Routes from "../Routes";
 
-
 const Home = () => {
-
   useEffect(() => {
     document.title = "Home";
-    document.getElementById("img-huella").style.transform = "translateX(5px) rotateZ(0deg) scale(1)";
+    document.getElementById("img-huella").style.transform =
+      "translateX(5px) rotateZ(0deg) scale(1)";
     document.getElementById("img-huella").style.opacity = "0.15";
   }, []);
-  
+
   return (
     <div className="centro">
       <div className="centro">
@@ -40,6 +39,20 @@ const Home = () => {
           <p>nombreUsuario</p>
         </div>
         <div className="columna">
+          <NavLink to={Routes.AddUser}>
+            {/* ADMINISTRADOR */}
+            <button type="button" className="btn btn-primary botón">
+              Registrar nuevo usuario
+            </button>
+          </NavLink>
+          <NavLink to={Routes.CRUDUsers}>
+            <button type="button" className="btn btn-primary botón">
+              Visualizar listado de usuarios
+            </button>
+          </NavLink>
+
+          {/* SECRETARIA */}
+
           <NavLink to={Routes.NUEVOANIMAL}>
             <button type="button" className="btn btn-primary botón">
               Registrar nuevo animal

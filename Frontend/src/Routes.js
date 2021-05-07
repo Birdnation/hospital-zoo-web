@@ -1,5 +1,4 @@
-const HOMESECRETARIA = "/home_secretaria";
-const HOMEADMIN = "/home_admin";
+const HOME = "/home";
 const NUEVOANIMAL = "/animal/create";
 const NUEVOZOOLOGICO = "/zoo/create";
 const CRUDUsers = "/users";
@@ -9,8 +8,7 @@ const UpdateUser = "/user/edit";
 
 
 const ROUTES = {
-    HOMESECRETARIA,
-    HOMEADMIN,
+    HOME,
     NUEVOANIMAL,
     NUEVOZOOLOGICO,
     CRUDUsers,
