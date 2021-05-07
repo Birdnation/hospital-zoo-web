@@ -9,13 +9,19 @@
     width: 300px;
 }
 
+.botón-pequeño{
+    width: 100px;
+    margin: 5px;
+}
+
 #img-huella{
-    position: absolute;
+    position: fixed;
     top: 10%;
     height: 80%;
-    opacity: 0.15;
+    opacity: 0;
     z-index: -1;
-    transform: translateX(5px);
+    transform: translateX(5px) rotateZ(-30deg) scale(0.6);
+    transition: 0.4s;
 }
 
 @media screen and (max-height: 480px) {
@@ -23,9 +29,10 @@
         position: absolute;
         top: calc(480px*0.1);
         height: calc(480px*0.8);
-        opacity: 0.15;
+        opacity: 0;
         z-index: -1;
-        transform: translateX(5px);
+        transform: translateX(5px) rotateZ(-30deg) scale(0.6);
+        transition: 0.4s;
     }
 }
 
@@ -49,4 +56,57 @@
 
 .vacío{
     height: 10px;
+}
+
+.background{
+    background-color: whitesmoke;
+}
+
+#titulo{
+    min-width: calc(50vw + 235px);
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+}
+
+#agregar-usuario{
+    width: 180px;
+}
+
+#div-agregar-usuario{
+    width: calc(100vw - 50vw - 235px);
+}
+
+#tabla{
+    max-width: 80vw;
+    border: 3px solid black;
+}
+
+#min-screen-height{
+    min-height: 100vh;
+}
+
+#confirmar{
+    background-color: whitesmoke;
+    width: 50vw;
+    height: 100px;
+    min-width: 300px;
+    max-width: 600px;
+    border: 1px solid gray;
+    position: absolute;
+}
+
+#opciones{
+    width: 300px;
+}
+
+#form1{
+    border: 3px solid lightgray;
+    width: 80vw;
+    min-width: 600px;
+    border-radius: 10px;
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
 }

@@ -1,12 +1,16 @@
 import { NavLink } from "react-router-dom";
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "../Styles/custom.css";
 import "../Styles/styles.css";
 import Routes from "../Routes";
 
+
 const Home = () => {
+
   useEffect(() => {
     document.title = "Home";
+    document.getElementById("img-huella").style.transform = "translateX(5px) rotateZ(0deg) scale(1)";
+    document.getElementById("img-huella").style.opacity = "0.15";
   }, []);
   
   return (

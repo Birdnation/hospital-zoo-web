@@ -14,8 +14,11 @@ const Login = () => {
         <input type="text" />
         <h2>CONTRASEÑA</h2>
         <input type="password" />
-        <NavLink to="/home">
-          <button>ENTRAR</button>
+        <NavLink to="/home_secretaria">
+          <button>Home secretaria</button>
+        </NavLink>
+        <NavLink to="/home_admin">
+          <button>Home admin</button>
         </NavLink>
       </div>
     </>

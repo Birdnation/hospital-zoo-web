@@ -82,3 +82,13 @@ table {
   position: absolute; 
   z-index: -1;
 }
+
+.no-mostrar{
+  display: none;
+}
+
+.flex-end{
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+}
