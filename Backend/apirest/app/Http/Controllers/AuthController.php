@@ -14,13 +14,15 @@ class AuthController extends Controller
         $request->validate([
             'name' => 'required|string',
             'email' => 'required|string|email|unique:users',
-            'password' => 'required|string'
+            'password' => 'required|string',
+            'rol' => 'required|string',
         ]);
 
         User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => bcrypt($request->password)
+            'password' => bcrypt($request->password),
+            'rol' => $request->rol,
         ]);
 
         return response()->json([
@@ -55,7 +57,8 @@ class AuthController extends Controller
             'access_token' => $tokenResult->accessToken,
             'token_type' => 'Bearer',
             'expires_at' => Carbon::parse($token->expires_at)->toDateTimeString(),
-            'message' => 'Ingreso exitoso'
+            'message' => 'Ingreso exitoso',
+            'rol' => $user->rol,
         ]);
     }
 
@@ -71,5 +74,10 @@ class AuthController extends Controller
     public function user(Request $request)
     {
         return response()->json($request->user());
+    }
+
+    public function users()
+    {
+        return response()->json(User::all());
     }
 }

@@ -25,5 +25,6 @@ Route::group([], function () {
         //rutas con autenticacion
         Route::get('logout', 'AuthController@logout');
         Route::get('user', 'AuthController@user');
+        Route::get('users', 'AuthController@users');
     });
 });
